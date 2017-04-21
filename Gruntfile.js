@@ -22,7 +22,7 @@ module.exports = function (grunt) {
     watch: {
       sass: {
         files: [ '<%= yeoman.app %>/styles/{,*/}*.{scss,sass}' ],
-        tasks: [ 'sass:server' ]
+        //tasks: [ 'sass:server' ]
       },
       livereload: {
         options: {
@@ -207,7 +207,7 @@ module.exports = function (grunt) {
 
     grunt.task.run([
       'clean:server',
-      'sass:server',
+      //'sass:server',
       'connect:livereload',
       'watch'
     ]);
