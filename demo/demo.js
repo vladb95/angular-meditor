@@ -6,12 +6,8 @@ var app = angular.module('meditorDemo', [
 ]);
 
 app.controller('MainCtrl', function($scope, $rootScope) {
-  'use strict';
 
   var model = $scope.model = {};
   model.text = 'angular-meditor using ng-model.';
-
-  return $rootScope.$on('$routeChangeSuccess', function() {
-  });
   
 });
